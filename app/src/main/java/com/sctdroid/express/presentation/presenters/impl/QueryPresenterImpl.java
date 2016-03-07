@@ -57,9 +57,9 @@ public class QueryPresenterImpl extends AbstractPresenter implements QueryPresen
     }
 
     @Override
-    public void query(String params) {
+    public void query() {
         QueryInteractor interactor = new QueryInteractorImpl(mExecutor, mMainThread, this, mDataRepository);
-        interactor.setParams(params);
+        interactor.setParams(mView.obtainQueryData());
         interactor.execute();
     }
 }

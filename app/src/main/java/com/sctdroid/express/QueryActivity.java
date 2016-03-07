@@ -38,7 +38,7 @@ public class QueryActivity extends AppCompatActivity implements BaseView, QueryP
             @Override
             public void onClick(View view) {
                 if (mPresenter != null)
-                    mPresenter.query(mInputBox.getText().toString());
+                    mPresenter.query();
             }
         });
     }
@@ -46,6 +46,11 @@ public class QueryActivity extends AppCompatActivity implements BaseView, QueryP
     @Override
     public void showError(String data) {
         mResultBox.setText("Query error!");
+    }
+
+    @Override
+    public String obtainQueryData() {
+        return mInputBox.getText().toString();
     }
 
     @Override

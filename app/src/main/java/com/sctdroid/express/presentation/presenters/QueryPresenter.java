@@ -9,6 +9,7 @@ import com.sctdroid.express.presentation.ui.BaseView;
 public interface QueryPresenter extends BasePresenter {
     interface View extends BaseView {
         void displayData(String data);
+        String obtainQueryData();
     }
-    void query(String params);
+    void query();
 }
