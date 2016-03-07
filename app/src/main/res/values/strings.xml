@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Express</string>
+
+    <string name="hint">Type your express id here: </string>
+    <string name="query">Query</string>
+    <string name="result">Results will be showed here.</string>
+</resources>
